@@ -11,8 +11,9 @@ namespace ListaDeCompras
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Montserrat-Light.ttf", "MontserratLight");
+                    fonts.AddFont("Montserrat-Regular.ttf", "MontserratRegular");
+                    fonts.AddFont("Montserrat-ExtraBold.ttf", "MontserratExtraBold");
                 });
 
 #if DEBUG
