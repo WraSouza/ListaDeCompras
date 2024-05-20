@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ListaDeCompras.Views.ListToBuyPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ListToBuyPage">
+    <Grid RowDefinitions="75,*">
+        <StackLayout Orientation="Horizontal" Padding="10">
+            <ImageButton Source="back.svg" HeightRequest="37"/>
+            <Entry Placeholder="Pesquisar" HorizontalOptions="FillAndExpand" Margin="15,0,0,0"/>
+        </StackLayout>
+        <CollectionView Grid.Row="1">
+            <CollectionView.EmptyView>
+                <Label Text="Nenhuma Lista de Compras" Style="{StaticResource Paragraph}"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"/>
+            </CollectionView.EmptyView>
+        </CollectionView>
+        
+        <Button
+            Grid.Row="1"
+            Margin="20"
+            HorizontalOptions="EndAndExpand"
+            Text="+"
+            VerticalOptions="EndAndExpand" />
+    </Grid>
+</ContentPage>

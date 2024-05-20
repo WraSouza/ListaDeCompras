@@ -1,4 +1,6 @@
-﻿namespace ListaDeCompras
+﻿using ListaDeCompras.Views;
+
+namespace ListaDeCompras
 {
     public partial class App : Application
     {
@@ -6,7 +8,8 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            
+            MainPage = VersionTracking.IsFirstLaunchEver ? new FirstPage() : new AppShell();
         }
     }
 }
